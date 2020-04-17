@@ -17,10 +17,15 @@ body {
 
 #menu { 
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     }
 
 #menu a { 
-    display: inline-block;
+    margin: 4px;
     background-color: #adbecf;
     color: black;
     padding: 1px 20px 1px 20px;
@@ -39,8 +44,8 @@ body {
     color: violet;
     }
 
-#menu .menu_activo { 
-    background-color: #d39c87;
+#menu .menu-activo { 
+    background-color: #eb4c0d;
     }
         
 #sec_quien_soy  { 
@@ -109,6 +114,20 @@ body {
     text-align:justify;
     }
 
+#sec_como_puedo_ayudarte .boton_ver{ 
+    background-color: white;
+    border: 1px solid black;
+    color: #e07923;
+    padding: 5px;
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    }
+
+#sec_como_puedo_ayudarte .boton_ver:hover{ 
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+    color: #4890cb;
+        }
+
 #sec_herramientas { 
     color: white;
     text-align: center;
@@ -126,5 +145,41 @@ body {
 #pie_de_pagina { 
     text-align: center;
      }
+
+#sec_contenedor_lg { 
+    background-color: #cf8f30;
+    margin: 50% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+       }
+
+#sec_contenedor_lg img {
+    margin: 10px;
+}
+
+#cnt_img_lg {
+    background: #607d8b;
+    width: 100px;
+    height: 50px; 
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.otro {
+    order:1;
+    align-self: stretch;
+    height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: red;
+    }
+  }
                   
               
